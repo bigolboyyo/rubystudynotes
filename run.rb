@@ -28,7 +28,7 @@ p 1.0.class #float
 p "1".class #string
 
 # symbol starts with a colon (:) followed by an identifying word such as: 
-:rose 
+:rose #symbol
 # we often see symbols in HASHES
 
 {name:"rose"}.class #hash - (essentially an OBJECT in JS)
@@ -52,4 +52,6 @@ p DOG #"Woofers"
 $bird = "flappy"
 
 p $bird #"flappy"
+
+
 

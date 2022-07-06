@@ -234,5 +234,6 @@ def stylish_painter
 
   reverse_name(123) # nil (not a String as required in our method above)
 
-  
+
+
 
