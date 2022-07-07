@@ -42,5 +42,26 @@ def basic_while
 # Looping with .each
 # This can be used with arrays and objects, but a common use case is to use it for a Range: https://www.rubyguides.com/2016/06/ruby-ranges-how-do-they-work/
 
-
+def fizzbuzz(num)
+    if num % 3 == 0 && num % 5 == 0
+      "FizzBuzz"
+    elsif num % 3 == 0
+      "Fizz"
+    elsif num % 5 == 0
+      "Buzz"
+    else
+      num
+    end
+  end
+  
+  # Ruby creates these sequences using the ''..'' and ''...'' range operators. 
+  # The two-dot form creates an inclusive range, 
+  # while the three-dot form creates a range that excludes the specified high value.
+  
+  def fizzbuzz_printer
+    # This is our range (1..100)
+    (1..100).each do |num|
+      puts fizzbuzz(num)
+    end
+  end
 
