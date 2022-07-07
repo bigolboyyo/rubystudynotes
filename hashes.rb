@@ -1,7 +1,7 @@
 # Hashes are Ruby's equivalent of a plain old JavaScript OBJECT. Composed of key/value pairs, Each key pointing to a specific value.
 # https://ruby-doc.org/core-2.7.3/Hash.html
 
-# There are a few ways of creating Hashes as follows
+# There are a few ways of creating Hashes: see `common_data_types.rb`
 
 my_hash = {key1: "value1", key2: "value2"}
 
