@@ -5,7 +5,7 @@
 
 my_hash = {key1: "value1", key2: "value2"}
 
-# You can access data from the above has by using bracket notation and pass in the symbol for the key you are trying to access
+# You can access data from the above hash by using bracket notation and pass in the symbol for the key you are trying to access
 puts my_hash[:key2] #value2
 
 # Attemting to access a key that doesn't exist will return nil
