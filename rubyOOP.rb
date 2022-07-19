@@ -182,3 +182,20 @@ puts "This string is the receiver".reverse #reverse is the method
 #FIXME: Deeper dive into instance methods
 
 # We can create our own instance methods and don't have to just rely on our build in methods (object.methods)
+
+
+# A local variable that is defined inside one method cannot be accessed by another method:
+
+def method_a
+  my_local_variable = "I can only be used in method_a"
+  puts my_local_variable
+end
+
+def method_b
+  puts my_local_variable
+end
+
+# method_b
+# NameError (undefined local variable or method `my_local_variable' for main:Object)
+
+#TODO:FIXME: CHECK OUT THIS REPO FOR EXTENDED NOTES: https://github.com/bigolboyyo/phase-3-ruby-oo-basics-instance-variables-lab
