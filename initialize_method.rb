@@ -58,7 +58,7 @@ puts grild_chkn.name # Grilled Chicken
 
 class RecipeBook
     # attr_reader lets us pass the :name symbol to be read by our methods
-    # This is a MACRO
+    # These are MACROs
 attr_reader :name
 attr_writer :name
 
