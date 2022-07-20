@@ -49,7 +49,7 @@ require 'pry'
 
 class Album
 
-    #See line 91: Class Constants
+    #See line 96: Class Constants
     GENRES = ["Hip-Hop", "Pop", "Jazz"]
 
 
