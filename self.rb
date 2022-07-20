@@ -124,16 +124,48 @@ pp kitty # #<Cat:0x000055e2501be698 @name="Kitty", @owner="Austin Powers">
 # REMEMBER: In Ruby, when we use self keyword in an instance method, self refers to whatever instance that method was called on. It's like a special variable that changes meaning depending on the context.
 
 # Here's a JavaScript reference showing the similar ( this ) keyword
-=begin 
+# class Dog {
+#   showingThis() {
+#     console.log(this);
+#   }
+# }
 
-class Dog {
-  showingThis() {
-    console.log(this);
-  }
-}
+# const fido = new Dog();
+# fido.showingThis();
+# // => Dog {}
 
-const fido = new Dog();
-fido.showingThis();
-// => Dog {}
 
-=end
+
+#TODO: IMPLICIT SELF
+
+class Bird
+  attr_accessor :name, :owner
+
+  def initialize(name)
+    @name = name
+  end
+
+  def squawk
+    puts "Squawk!"
+  end
+
+  def get_adopted(owner_name)
+    # self.squawk
+    squawk
+
+    #What if we removed self.owner and simply tried owner = owner_name
+    # Well this is treated as a VARIABLE ASSIGNMENT instead of a METHOD CALL
+    self.owner = owner_name
+  end
+
+end
+
+birdie = Bird.new("Birdie")
+birdie.get_adopted("BirdMan")
+
+# notice how we can reference self.squawk in our get_adopted method
+# well we can implicitly squawk because the object is self aware that it is getting called upon with get_adopted
+
+# using self.squawk is an EXPLICIT RECEIVER where self is receiving the bark method
+# In Ruby when it encounters a bareword such as squawk it will attempt to use that AS A METHOD and call it on self
+
