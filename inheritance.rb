@@ -81,3 +81,18 @@ birdo.speak # squawkk
 pp [birdo.name, birdo.age] # ["Birdo", 26]
 
 Animal.all_animals # ["Catto", "Doggo", "Birdo"]
+
+binding.pry
+
+#FIXME:
+#ancestors to see all the parent classes
+
+# pry(main)> Cat.ancestors
+# => [Cat, Animal, Object, PP::ObjectMixin, Kernel, BasicObject]
+
+#FIXME:
+#superclass to see the immediate parent class
+
+# [3] pry(main)> Cat.superclass
+# => Animal
+
