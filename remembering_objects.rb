@@ -67,3 +67,4 @@ This is before we added our def self.all CLASS METHOD
 Song.print_all_song_names
 # Trident Tail
 # Jelly The Queen
+
