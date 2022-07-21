@@ -45,7 +45,7 @@ jelly_the_queen = Song.new("Jelly The Queen")
 ## REMEMBER: IT TAKES TWO AT @@ symbols to declare a CLASS VARIABLE
 
 # Notice in our initialize, init itself is technically an instance method. 
-# And inside an instance method we are in our METHOD SCOPE and self refers to whichever instance the method is being called one
+# And inside an instance method we are in our METHOD SCOPE and self refers to whichever instance the method is being called on
 
 =begin
 
